@@ -5,6 +5,7 @@ Quartz.Net using Sqlite as DataStore
 
 Configuration
 
+```
 <add key="quartz.threadPool.type" value="Quartz.Simpl.SimpleThreadPool, Quartz" />
 <add key="quartz.threadPool.threadCount" value="10" />
 <add key="quartz.jobStore.type" value="Quartz.Impl.AdoJobStore.JobStoreTX, Quartz" />
@@ -16,13 +17,17 @@ Configuration
 <add key="quartz.jobStore.driverDelegateType" value="Quartz.Impl.AdoJobStore.SQLiteDelegate, Quartz" />
 <add key="quartz.dataSource.default.provider" value="SQLite-10" />
 <add key="quartz.dataSource.default.connectionString" value="Data Source=data\quartznet.db;Version=3;" />
+```
 
 Install ADO.NET Sqlite
 
+```
 Install-Package System.Data.SQLite.Core
+```
 
 Binding
 
+```
 <runtime>
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
         <dependentAssembly>
@@ -31,3 +36,4 @@ Binding
         </dependentAssembly>
     </assemblyBinding>
 </runtime>
+```
